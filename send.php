@@ -52,13 +52,13 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.com'; // SMTP сервера вашей почты
     $mail->Username   = 'nurlan.urazkulov'; // Логин на почте
-    $mail->Password   = 'yaoxedaxtggqdydu'; // Пароль на почте
+    $mail->Password   = 'yaoxedaxtggqdyd'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('nurlan.urazkulov@yandex.ru', $name); // Адрес самой почты и имя отправителя
+    $mail->Port       = 465; // Порт сервера почты
+    $mail->setFrom('nurlan.urazkulov@yandex.ru', $name); // Адрес самой почты
 
     // Получатель письма
-    $mail->addAddress('nurlan.urazkulov@gmail.com');  
+    $mail->addAddress('nurlan.urazkulov@gmail.com'); 
     // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
 // Отправка сообщения
